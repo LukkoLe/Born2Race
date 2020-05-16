@@ -1,0 +1,63 @@
+
+<link href="css/off_canvas_menu.css" rel="stylesheet">
+<body>
+<style>
+body {
+  overflow-x: auto;
+}
+
+  .nav-trigger span,
+.nav-trigger span::before,
+.nav-trigger span::after {
+  position: absolute;
+  height: 4px;
+  width: 36px;
+  background:#2a2e34;
+}
+.welcome {
+  position	: absolute;
+  padding-right: 2em;
+  top: 1em;
+  max-height: 1em;
+  text-align: right;
+  -webkit-text-stroke: 2px black;
+  width: 100%;
+  font-weight: 800;
+  font-size: 3em;
+  color: #D9534F;
+  opacity: 70%;
+}
+
+</style>
+
+<a href="#navigation" class="nav-trigger">
+  Menu <span></span>
+</a>
+
+<main>
+  <section class="intro">
+    <img src="img/2014-Ducati-Monster.jpg" alt="Ducati">
+    <div class="welcome"><img src="img/b2r_sm.jpg" style="max-height: 2em;"></div>
+  </section>
+</main>
+<nav class="nav-container" id="navigation">
+  <header>
+    <h2></h2>
+  </header>
+
+  <ul class="nav">
+      <li><a href="index.html">Главная &ensp;<i class="fa fa-home fa-fw"></i></a></li>
+      <li><a href="about.html">О нас &ensp;<i class="fa fa-motorcycle fa-fw"></i></a></li>
+      <li><a href="diploma_calendar/examples/selectable.html">Расписание &ensp;<i class="fa fa-calendar" aria-hidden="true"></i></a></li>
+    <li><a href="portfolio.html">Портфолио &ensp;<i class="fa fa-camera-retro" aria-hidden="true"></i></a></li>
+    <li><a href="news.html">Новости &ensp;<i class="fa fa-users" aria-hidden="true"></i></a></li>
+    <li><a href="faq.html">Вопросы &ensp;<i class="fa fa-question-circle" aria-hidden="true"></i></a></li>
+    <li><a href="contacts.html">Контакты &ensp;<i class="fa fa-phone" aria-hidden="true"></i></i></a></li>
+    <li><a href="/Login_b2r/login.html">Личный кабинет &ensp;<i class="fa fa-user" aria-hidden="true"></i></i></a></li>
+    <!-- <li><a href="demo.html">Progress loading &ensp;<i class="fa fa-star" aria-hidden="true"></i></i></a></li> -->
+  </ul>
+</nav>
+
+<div class="overlay"></div> <!-- improve main element 3d movement -->
+</body> 
+<script src="js/off_canvas_menu.js"></script> 
