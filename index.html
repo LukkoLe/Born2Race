@@ -1,30 +1,29 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, inital-scale=1">
 <link href="css/off_canvas_menu.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-theme.css" rel="stylesheet">
+</head>
 <body>
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <style>
 body {
   overflow-x: auto;
 }
-  
-    .nav-open .nav-trigger span::before, .nav-open .nav-trigger span::after {
-    background: #d33f4a;
+
+  .nav-trigger span,
+.nav-trigger span::before,
+.nav-trigger span::after {
+  position: absolute;
+  height: 4px;
+  width: 36px;
+  background:#2a2e34;
 }
-    .nav-trigger span, .nav-trigger span::before, .nav-trigger span::after {
-    position: absolute;
-    height: 4px;
-    width: 36px;
-    background:#d33f4a;
-}
-  
-  .nav > li > a {
-    top: 0.8em;
-    position: relative;
-    display: block;
-    padding: 10px 15px;
-}
-  
 .welcome {
+  background: aliceblue;
   position	: absolute;
   padding-right: 2em;
   top: 1em;
@@ -38,36 +37,57 @@ body {
   opacity: 70%;
 }
 
+.navbar-nav {
+  font-size: 2rem;
+}
+
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 2rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+/* <img src="img/b2r_sm.jpg" style="max-height: 2em;"> */
 </style>
 
-<a href="#navigation" class="nav-trigger">
+<!-- <a href="#navigation" class="nav-trigger">
   Menu <span></span>
-</a>
-
+</a> -->
 <main>
   <section class="intro">
     <img src="img/2014-Ducati-Monster.jpg" alt="Ducati">
-    <div class="welcome"><img src="img/b2r_sm.jpg" style="max-height: 2em;"></div>
+    <div class="welcome"></div>
   </section>
-</main>
-<nav class="nav-container" id="navigation">
-  <header>
-    <h2></h2>
-  </header>
+  <div style="  width: 70%; height: 80%; overflow: auto; margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0; white-space: nowrap;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="index.html">Главная &ensp;<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="about.html">О нас &ensp;</a>
+          <a class="nav-item nav-link" href="diploma_calendar/examples/selectable.html">Расписание &ensp;</a>
+          <a class="nav-item nav-link" href="portfolio.html">Портфолио &ensp;</a>
+          <img src="img/b2r_sm.jpg" style="max-height: 3em;">
+          <a class="nav-item nav-link" href="news.html">&ensp;Новости &ensp;</a>
+          <a class="nav-item nav-link" href="faq.html">Вопросы &ensp;</a>
+          <a class="nav-item nav-link" href="contacts.html">Контакты &ensp;</a>
+          <a class="nav-item nav-link" href="Login_b2r/login.html">Личный кабинет &ensp;</a>
+        </div>
+      </div>
+    </nav>
+  </div>
 
-  <ul class="nav">
-      <li><a href="index.html">Главная &ensp;<i class="fa fa-home fa-fw"></i></a></li>
-      <li><a href="about.html">О нас &ensp;<i class="fa fa-motorcycle fa-fw"></i></a></li>
-      <li><a href="diploma_calendar/examples/selectable.html">Расписание &ensp;<i class="fa fa-calendar" aria-hidden="true"></i></a></li>
-    <li><a href="portfolio.html">Портфолио &ensp;<i class="fa fa-camera-retro" aria-hidden="true"></i></a></li>
-    <li><a href="news.html">Новости &ensp;<i class="fa fa-users" aria-hidden="true"></i></a></li>
-    <li><a href="faq.html">Вопросы &ensp;<i class="fa fa-question-circle" aria-hidden="true"></i></a></li>
-    <li><a href="contacts.html">Контакты &ensp;<i class="fa fa-phone" aria-hidden="true"></i></i></a></li>
-    <li><a href="Login_b2r/login.html">Личный кабинет &ensp;<i class="fa fa-user" aria-hidden="true"></i></i></a></li>
-    <!-- <li><a href="demo.html">Progress loading &ensp;<i class="fa fa-star" aria-hidden="true"></i></i></a></li> -->
-  </ul>
-</nav>
+</main>
 
 <div class="overlay"></div> <!-- improve main element 3d movement -->
 </body> 
 <script src="js/off_canvas_menu.js"></script> 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</html>
