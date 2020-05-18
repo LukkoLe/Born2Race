@@ -37,6 +37,36 @@ body {
   opacity: 70%;
 }
 
+@media screen and (min-width:0) and (max-width:480px){
+    .theScreen{
+        background-image: url('img/2014-Ducati-Monster-sm.jpg');
+        transition: all .3s ease-in-out;
+     }
+    .theScreen span:after{
+    content: "mini";
+    display: block;
+    }
+}
+@media screen and (min-width:481px){
+    .theScreen{
+        background-image: url('img/2014-Ducati-Monster-1200-action-15.jpg');
+        transition: all .3s ease-in-out;
+     }
+    .theScreen span:after{
+    content: "PC";
+    display: block;
+    }
+}
+
+#stage{
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: 100% 0%;
+	}
+
 .navbar-nav {
   font-size: 2rem;
 }
@@ -58,7 +88,9 @@ body {
 </a> -->
 <main>
   <section class="intro">
-    <img src="img/2014-Ducati-Monster.jpg" alt="Ducati">
+    <div id="stage" class="row theScreen">
+    <!-- <img src="img/2014-Ducati-Monster.jpg" alt="Ducati"> -->
+    </div>
     <div class="welcome"></div>
   </section>
   <div style="  width: 70%; height: 80%; overflow: auto; margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0; white-space: nowrap;">
@@ -72,7 +104,7 @@ body {
           <a class="nav-item nav-link" href="about.html">О нас &ensp;</a>
           <a class="nav-item nav-link" href="diploma_calendar/examples/selectable.html">Расписание &ensp;</a>
           <a class="nav-item nav-link" href="portfolio.html">Портфолио &ensp;</a>
-          <img src="img/b2r_sm.jpg" style="max-height: 3em;">
+          <img src="img/b2r (2).svg" style="max-height: 3em;">
           <a class="nav-item nav-link" href="news.html">&ensp;Новости &ensp;</a>
           <a class="nav-item nav-link" href="faq.html">Вопросы &ensp;</a>
           <a class="nav-item nav-link" href="contacts.html">Контакты &ensp;</a>
